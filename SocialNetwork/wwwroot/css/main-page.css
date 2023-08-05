@@ -90,6 +90,10 @@
 }
 
 .ava {
+    width: 5%;
+    max-width: max-content;
+}
+.logotype {
     width: 20%;
     max-width: max-content;
 }
