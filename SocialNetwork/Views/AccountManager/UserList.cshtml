@@ -8,7 +8,12 @@
         @foreach (var user in @Model.UserList)
         {
             <div>
-                <label>@user.GetFullName()</label>
+                <img src="@user.Image" class="ava-search" />
+                <ul>
+                    <li>@user.GetFullName()</li>
+                    <li>@user.Status</li>
+                    <li>@user.About</li>
+                </ul>
                 @if (!@user.IsFriendWithCurrent)
                 {
                     <form asp-controller="AccountManager" asp-action="AddFriend" asp-route-id="@user.Id" method="post">
@@ -16,6 +21,10 @@
                             Добавить в друзья
                         </button>
                     </form>
+                }
+                else
+                {
+                    <p class="notification">Уже добавлен в друзья</p>
                 }
             </div>
         }

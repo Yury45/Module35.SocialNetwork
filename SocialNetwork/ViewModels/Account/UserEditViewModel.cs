@@ -21,7 +21,7 @@ namespace SocialNetwork.ViewModels.Account
         public string LastName { get; set; }
 
         [DataType(DataType.Text)]
-        [Display(Name = "Фамилия", Prompt = "Введите фамилию")]
+        [Display(Name = "Отчество", Prompt = "Введите отчество")]
         public string MiddleName { get; set; }
 
         [Required(ErrorMessage = "Поле Email обязательно для заполнения")]

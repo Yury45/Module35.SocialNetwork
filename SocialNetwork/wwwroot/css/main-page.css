@@ -90,9 +90,16 @@
 }
 
 .ava {
-    width: 5%;
+    width: 20%;
     max-width: max-content;
 }
+
+.ava-search {
+    margin: 10px 20px 10px 20px;
+    width: 15%;
+    max-width: max-content;
+}
+
 .logotype {
     width: 20%;
     max-width: max-content;
@@ -156,4 +163,14 @@ input[type="checkbox"].input-validation-error {
 
 .date_box{
     width: 100%;
+}
+
+.notification {
+    font-family: fantasy;
+    font-size: 14px;
+}
+
+.lined-block-flex{
+    display: flex;
+        
 }

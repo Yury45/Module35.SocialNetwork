@@ -61,7 +61,6 @@ namespace SocialNetwork
 
             services.AddControllersWithViews();
             services.AddRazorPages();
-
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -94,7 +93,6 @@ namespace SocialNetwork
 
             app.UseEndpoints(endpoints =>
             {
-                // определение маршрутов
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

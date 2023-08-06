@@ -18,11 +18,10 @@ namespace SocialNetwork.Controllers.Account
     {
         #region Поля и конструктор контроллера
         private IMapper _mapper;
+        private IUnitOfWork _unitOfWork;
 
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-
-        private IUnitOfWork _unitOfWork;
 
         public AccountManagerController(UserManager<User> userManager, SignInManager<User> signInManager, IMapper mapper, IUnitOfWork unitOfWork)
         {
