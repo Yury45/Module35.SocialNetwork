@@ -13,7 +13,7 @@
     </div>
     <h4 class="center">Чат @Model.You.FirstName и  @Model.ToWhom.FirstName</h4>
     <div class="lined-block">
-        <label class="gray-text">Сообщения</label>
+        <label class="notification">Сообщения:</label>
         @if (Model.History.Count != 0)
         {
 
@@ -33,8 +33,6 @@
         }
     </div>
     <div class="lined-block">
-        <label class="gray-text">Новое сообщение</label>
-
         <form class="frm" method="post" asp-controller="AccountManager" asp-action="NewMessage" asp-route-id="@Model.ToWhom.Id">
             <div asp-validation-summary="ModelOnly"></div>
             <div>
